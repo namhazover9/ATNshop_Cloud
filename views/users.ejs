@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;	
+      font-family: Raleway, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(90deg, #C7C5F4, #776BCC);		
+    }
+
+   
+  </style>
+  <body>
+    <h1 style="font-size: 40px; font-weight: bold; text-align: center;"><%= title %></h1>
+    <p style="font-size: 24px; text-align: center;">Welcome to <%= name %></p>
+    <div class="container">
+      <p> <%- table %> </p>
+    </div>
+    <a style="font-size: 20px; padding-top: 40px; font-weight: bold;" href="/logout">Log out</a>
+  </body>
+</html>

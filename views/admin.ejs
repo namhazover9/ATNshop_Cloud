@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <!-- <link rel='stylesheet' href='/stylesheets/style.css' /> -->
+    <script type = "text/JavaScript">
+      function AutoRefresh( t ) {
+         setTimeout("location.reload(true);", t);
+      }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+    
+        * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;	
+          font-family: Raleway, sans-serif;
+        }
+    
+        body {
+          background: linear-gradient(90deg, #C7C5F4, #776BCC);
+          margin: 20px;	
+        }
+    
+       
+      </style>
+  </head>
+  <body onload = "JavaScript:AutoRefresh(10000);">
+    <h1 style="font-size: 40px; font-weight: bold; margin-top: 10px; text-align: center;"><%= title %></h1>
+    <p style="font-size: 24px; margin-top: 10px; text-align: center;">Welcome to <%= name %></p>
+    <p><%- box %></p>
+    <p> <%- table %> </p>
+    <a style="font-size: 20px; padding-top: 40px; font-weight: bold; text-align: center;" href="/logout">Logout</a>
+  </body>
+  
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Input Number</label>
+  <input type="text" class="textInput">
+  <button type="button" class="myBtn">submit</button>
+  <label class="textOutput"></label>
+  <script>
+    btn = document.querySelector('.myBtn');
+    btn.onclick = function() {
+        var inputValue = document.querySelector('.textInput').value
+        var output = document.querySelector('.textOutput')
+        switch (inputValue % 7) {
+            case 1:
+                output.innerHTML = 'Sunday';
+                break;
+            case 2:
+                output.innerHTML = 'Monday';
+                break;
+            case 3:
+                output.innerHTML = 'Tuesday';
+                break;
+            case 4:
+                output.innerHTML = 'Webnesday';
+                break;
+            case 5:
+                output.innerHTML = 'Thursday';
+                break;
+            case 6:
+                output.innerHTML = 'Friday';
+                break;
+            case 0:
+                output.innerHTML = 'Saturday';
+                break;
+            default:
+                output.innerHTML = 'Invalid'
+        }
+    }
+   </script>
+
+</body>
+</html> -->
